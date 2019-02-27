@@ -13,6 +13,6 @@
         (click)="onServerCreate()">
   Add server
 </button>
-<p>Server was created, name is {{serverName}}</p>
+<p *ngIf="serverCreated">Server was created, name is {{serverName}}</p>
 <app-server></app-server>
 <app-server></app-server>
